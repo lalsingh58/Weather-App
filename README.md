@@ -1,12 +1,52 @@
-# React + Vite
+# React Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive **Weather App** built with **React** that fetches live weather data from the **OpenWeather API**. Users can search for any city and get real-time weather information including temperature, humidity, wind speed, and weather condition with dynamic icons.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📂 Project Structure
+react-weather-app/
+│
+├─ public/
+│ └─ index.html
+│
+├─ src/
+│ ├─ components/
+│ │ └─ Card.jsx
+│ ├─ App.jsx
+│ ├─ index.js
+│ └─ Card.css
+│
+├─ package.json
+└─ README.md
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ⚡ Features
+
+- Search weather by city name.  
+- Displays **temperature (°C)**, **humidity**, **wind speed**, and **city name**.  
+- Dynamic **weather icons** based on weather conditions.  
+- Responsive design with **animated UI elements**.  
+- Built using **React functional components** and **React Hooks** (`useState`).  
+- Fetches live data using **OpenWeather API**.
+
+---
+
+## 🛠 Technologies Used
+
+- **React** – Frontend library for building interactive UI.  
+- **React Icons** – For search and weather icons.  
+- **OpenWeather API** – Provides live weather data.  
+- **CSS3** – For styling and animations.  
+- **Vite** – For fast development and bundling.
+
+---
+
+## 🚀 Installation & Setup
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/your-username/react-weather-app.git
+cd react-weather-app

@@ -1,0 +1,184 @@
+/* Body with gradient background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #2b5876, #4e4376);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+/* Weather Card Container */
+.container {
+  width: 350px;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 1s ease-in-out;
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.05);
+}
+
+/* Search Container */
+.searchCont {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  padding: 8px 12px;
+  margin-bottom: 20px;
+}
+
+.input-box {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  font-size: 16px;
+  padding: 8px;
+}
+
+.searchCont svg {
+  font-size: 24px;
+  cursor: pointer;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.searchCont svg:hover {
+  transform: rotate(20deg) scale(1.2);
+}
+
+/* Weather Data */
+.weatherData {
+  text-align: center;
+  margin-bottom: 20px;
+  animation: popIn 0.8s ease-in-out;
+}
+
+.weatherData img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  animation: float 3s infinite ease-in-out;
+}
+
+.weather-degree {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.weather-city {
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+/* Footer Section */
+.weather-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+  gap: 15px;
+}
+
+.weather-footer div {
+  text-align: center;
+  flex: 1;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  padding: 10px;
+  animation: fadeIn 1.2s ease-in-out;
+  transition: transform 0.3s;
+}
+
+.weather-footer div:hover {
+  transform: translateY(-5px);
+}
+
+/* Icons inside footer */
+.hum-icon,
+.wind-icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  margin-bottom: 5px;
+  animation: pulse 2s infinite;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+  .container {
+    width: 90%;
+    padding: 15px;
+  }
+  .weather-degree {
+    font-size: 36px;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    background: rgba(255, 255, 255, 0.3);
+  }
+  50% {
+    transform: scale(1.2);
+    background: rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    transform: scale(1);
+    background: rgba(255, 255, 255, 0.3);
+  }
+}

@@ -1,5 +1,7 @@
 # React Weather App
 
+Deployed Link : https://glittery-bonbon-30d050.netlify.app/
+
 A modern, responsive **Weather App** built with **React** that fetches live weather data from the **OpenWeather API**. Users can search for any city and get real-time weather information including temperature, humidity, wind speed, and weather condition with dynamic icons.
 
 ---

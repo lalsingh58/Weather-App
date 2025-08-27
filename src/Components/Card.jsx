@@ -5,7 +5,7 @@ import "./Card.css";
 function Card() {
   const [city, setCity] = useState("");
   const [weatherData, setWeatherData] = useState(null);
-  const ApiKey = "b392a1355ff06efd74c78c6fcf5e5fcc";
+  const ApiKey = "your Api Key";
 
   const getWeatherData = async () => {
     if (!city) {
